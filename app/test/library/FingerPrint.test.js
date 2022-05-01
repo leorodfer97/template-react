@@ -3,6 +3,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
  
 import FingerprintScanner from 'react-native-fingerprint-scanner';
 
+import { BoxStyles } from '../styles/Box.styles';
 import { ButtonStyles } from '../styles/Button.styles';
 import { SectionStyles } from '../styles/Section.styles';
 
@@ -42,7 +43,9 @@ const TestFingerPrintScanner = () => {
 
     return(
         <View style={SectionStyles.section}>
-
+            <View style={BoxStyles.box}>
+                <Text style={BoxStyles.textBox}>react-native-fingerprint-scanner</Text>
+            </View>
             <TouchableOpacity
                 style={ButtonStyles.buttonAction}
                 onPress={ () => { 

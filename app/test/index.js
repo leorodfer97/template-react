@@ -13,18 +13,20 @@ const IndexTest = () => {
         <>
             <ScrollView style={SectionStyles.sectionScroll}>
 
-                <TouchableOpacity 
-                    style={ButtonStyles.button}
-                    onPress={() => {navigation.navigate('react-native-fingerprint-scanner');}}
-                >
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('react-native-fingerprint-scanner');}}>
                     <Text style={ButtonStyles.textButton}>Fingerprint Scanner</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity 
-                    style={ButtonStyles.button}
-                    onPress={() => {navigation.navigate('biometrics');}}
-                >
+                <TouchableOpacity style={ButtonStyles.button}onPress={() => {navigation.navigate('biometrics');}}>
                     <Text style={ButtonStyles.textButton}>Biometrics</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('image-modal');}}>
+                    <Text style={ButtonStyles.textButton}>Image Modal</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('card-input');}}>
+                    <Text style={ButtonStyles.textButton}>Card Input</Text>
                 </TouchableOpacity>
 
             </ScrollView>

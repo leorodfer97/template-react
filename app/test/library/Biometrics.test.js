@@ -3,6 +3,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 
 import ReactNativeBiometrics from 'react-native-biometrics'
 
+import { BoxStyles } from '../styles/Box.styles';
 import { ButtonStyles } from '../styles/Button.styles';
 import { SectionStyles } from '../styles/Section.styles';
 
@@ -89,7 +90,9 @@ const TestBiometrics = () => {
 
     return(
         <View style={SectionStyles.section}>
-            
+            <View style={BoxStyles.box}>
+                <Text style={BoxStyles.textBox}>react-native-biometrics</Text>
+            </View>
             <TouchableOpacity style={ButtonStyles.buttonAction} onPress={ () => { playIsSensorAvailable() }} >
                 <Text style={ButtonStyles.textButton}>Ejecutar isSensorAvailable</Text>
             </TouchableOpacity>

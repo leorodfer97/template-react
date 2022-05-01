@@ -6,6 +6,8 @@ import { HeaderStyles } from '../test/styles/Header.styles';
 import IndexTest from '../test';
 import TestBiometrics from '../test/library/Biometrics.test';
 import TestFingerPrintScanner from '../test/library/FingerPrint.test';
+import TestImageModal from '../test/library/ImageModal.test';
+import TestCardInput from '../test/library/CardInput.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +42,28 @@ const TestRoutes = () => {
                 component={TestBiometrics}
                 options={{
                     title: 'Biometrics',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="image-modal"
+                component={TestImageModal}
+                options={{
+                    title: 'Image Modal',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="card-input"
+                component={TestCardInput}
+                options={{
+                    title: 'Card input',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',
