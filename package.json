@@ -15,6 +15,7 @@
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "deprecated-react-native-prop-types": "^2.3.0",
+    "pinar": "^0.12.1",
     "react": "17.0.2",
     "react-native": "0.68.1",
     "react-native-animated-nav-tab-bar": "^3.1.8",

@@ -11,6 +11,7 @@ import TestCardInput from '../test/library/CardInput.test';
 import TestMMKV from '../test/library/MMKV.test';
 import TestSwitchSelector from '../test/library/SwitchSelector.test';
 import TestHeaderParallax from '../test/library/HeaderParallax.test';
+import TestPinar from '../test/library/Pinar.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -101,6 +102,17 @@ const TestStackRoutes = () => {
                 component={TestHeaderParallax}
                 options={{
                     title: 'Header Parallax',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="pinar"
+                component={TestPinar}
+                options={{
+                    title: 'Pinar',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',
