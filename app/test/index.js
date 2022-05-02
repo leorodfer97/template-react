@@ -28,6 +28,10 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('card-input');}}>
                     <Text style={ButtonStyles.textButton}>Card Input</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('storage-mmkv');}}>
+                    <Text style={ButtonStyles.textButton}>Storage MMKV</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>

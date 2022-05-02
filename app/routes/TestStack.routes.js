@@ -8,13 +8,14 @@ import TestBiometrics from '../test/library/Biometrics.test';
 import TestFingerPrintScanner from '../test/library/FingerPrint.test';
 import TestImageModal from '../test/library/ImageModal.test';
 import TestCardInput from '../test/library/CardInput.test';
+import TestMMKV from '../test/library/MMKV.test';
 
 const Stack = createNativeStackNavigator();
 
-const TestRoutes = () => {
+const TestStackRoutes = () => {
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="index">
             <Stack.Screen
                 name="index"
                 component={IndexTest}
@@ -70,8 +71,19 @@ const TestRoutes = () => {
                     headerStyle: HeaderStyles.header,
                 }}
             />
+            <Stack.Screen
+                name="storage-mmkv"
+                component={TestMMKV}
+                options={{
+                    title: 'Storage MMKV',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
         </Stack.Navigator>
     );
 }
 
-export default TestRoutes;
+export default TestStackRoutes;
