@@ -32,6 +32,10 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('storage-mmkv');}}>
                     <Text style={ButtonStyles.textButton}>Storage MMKV</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('switch-selector');}}>
+                    <Text style={ButtonStyles.textButton}>Switch Selector</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>

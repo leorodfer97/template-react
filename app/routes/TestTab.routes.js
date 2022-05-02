@@ -19,17 +19,17 @@ const TestTabRoutes = () => {
                 inactiveTintColor: "#0F0F0F",
                 activeBackgroundColor: '#115599',
                 labelStyle: {
-                    fontSize: 12,
+                    fontSize: 16,
                 }
             }}
             appearance={{
                 tabBarBackground: 'white',
-                floating: false,
-                tabButtonLayout: 'horizontal',
-                whenActiveShow: 'both',
-                whenInactiveShow: 'both',
+                floating: true,
+                tabButtonLayout: 'vertical',
+                whenActiveShow: 'icon-only',
+                whenInactiveShow: 'icon-only',
                 dotSize: 'small',
-                horizontalPadding: 5,
+                horizontalPadding: 10,
             }}
         >
             <Tabs.Screen
@@ -37,7 +37,7 @@ const TestTabRoutes = () => {
                 component={TestPage1}
                 options={{
                   tabBarIcon: ({ focused, color, size }) => (
-                    <Icon color={color} name={'home'} size={size}/>
+                    <Icon color={color} name={'home'} size={25}/>
                   )
                 }}
             />
@@ -46,7 +46,7 @@ const TestTabRoutes = () => {
                 component={TestPage2}
                 options={{
                   tabBarIcon: ({ focused, color, size }) => (
-                    <Icon color={color} name={'file-invoice'} size={size}/>
+                    <Icon color={color} name={'file-invoice'} size={25}/>
                   )
                 }}
             />
@@ -55,7 +55,7 @@ const TestTabRoutes = () => {
                 component={TestPage3}
                 options={{
                   tabBarIcon: ({ focused, color, size }) => (
-                    <Icon color={color} name={'exclamation-triangle'} size={size}/>
+                    <Icon color={color} name={'exclamation-triangle'} size={25}/>
                   )
                 }}
             />
@@ -64,7 +64,7 @@ const TestTabRoutes = () => {
                 component={TestPage4}
                 options={{
                   tabBarIcon: ({ focused, color, size }) => (
-                    <Icon color={color} name={'info-circle'} size={size}/>
+                    <Icon color={color} name={'info-circle'} size={25}/>
                   )
                 }}
             />

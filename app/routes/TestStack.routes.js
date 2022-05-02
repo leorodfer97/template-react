@@ -9,6 +9,7 @@ import TestFingerPrintScanner from '../test/library/FingerPrint.test';
 import TestImageModal from '../test/library/ImageModal.test';
 import TestCardInput from '../test/library/CardInput.test';
 import TestMMKV from '../test/library/MMKV.test';
+import TestSwitchSelector from '../test/library/SwitchSelector.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -76,6 +77,17 @@ const TestStackRoutes = () => {
                 component={TestMMKV}
                 options={{
                     title: 'Storage MMKV',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="switch-selector"
+                component={TestSwitchSelector}
+                options={{
+                    title: 'Switch Selector',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',

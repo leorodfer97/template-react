@@ -9,8 +9,8 @@ const Drawer = createDrawerNavigator();
 const TestDrawerRoutes = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="test-stack" component={TestStackRoutes} options={{gestureEnabled: true,}} />
-      <Drawer.Screen name="test-animated-tab" component={TestTabRoutes} options={{gestureEnabled: true,}} />
+      <Drawer.Screen name="test-stack" component={TestStackRoutes} options={{gestureEnabled: true, headerShown: false}} />
+      <Drawer.Screen name="test-animated-tab" component={TestTabRoutes} options={{gestureEnabled: true, headerShown: false}} />
     </Drawer.Navigator>
   );
 }
