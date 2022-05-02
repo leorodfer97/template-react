@@ -10,12 +10,14 @@ import TestImageModal from '../test/library/ImageModal.test';
 import TestCardInput from '../test/library/CardInput.test';
 import TestMMKV from '../test/library/MMKV.test';
 import TestSwitchSelector from '../test/library/SwitchSelector.test';
+import TestHeaderParallax from '../test/library/HeaderParallax.test';
 
 const Stack = createNativeStackNavigator();
 
 const TestStackRoutes = () => {
 
     return (
+        // <Stack.Navigator initialRouteName="index" screenOptions={{headerShown: false}}>
         <Stack.Navigator initialRouteName="index">
             <Stack.Screen
                 name="index"
@@ -88,6 +90,17 @@ const TestStackRoutes = () => {
                 component={TestSwitchSelector}
                 options={{
                     title: 'Switch Selector',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="header-parallax"
+                component={TestHeaderParallax}
+                options={{
+                    title: 'Header Parallax',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',

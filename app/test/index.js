@@ -36,6 +36,10 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('switch-selector');}}>
                     <Text style={ButtonStyles.textButton}>Switch Selector</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('header-parallax');}}>
+                    <Text style={ButtonStyles.textButton}>Header Parallax</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>

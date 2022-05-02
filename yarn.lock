@@ -9485,6 +9485,13 @@ react-native-size-matters@^0.3.1:
   resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.3.1.tgz#24d0cfc335a2c730f6d58bd7b43ea5a41be4b49f"
   integrity sha512-mKOfBLIBFBcs9br1rlZDvxD5+mAl8Gfr5CounwJtxI6Z82rGrMO+Kgl9EIg3RMVf3G855a85YVqHJL2f5EDRlw==
 
+react-native-sticky-parallax-header@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-sticky-parallax-header/-/react-native-sticky-parallax-header-0.4.2.tgz#4fad236553bd7cf1b3fadc07c1d0af921cf2415f"
+  integrity sha512-fcS2jvid2PLNNP8JkHEsA4sdp9uUr+y82rkB9VcnQCqpS6baUzP8PnEsy4L9j7mqCpu6/AlpA77RpiC9WLvFJg==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-native-switch-selector@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-native-switch-selector/-/react-native-switch-selector-2.2.1.tgz#551ff32c018281904b1d5df79f5192c788195d87"

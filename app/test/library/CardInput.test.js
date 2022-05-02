@@ -26,10 +26,14 @@ const TestCardInput = () => {
             <CardView
                 fontFamily={'monospace'}
                 placeholder={placeholders}
-                brand={'null'}
+                brand={'visa'}
                 focused={'brand'}
                 cardImageFront={0}
                 cardImageBack={0}
+                name={'Juan perez'}
+                expiry={'12/26'}
+                number={'4040 5050 6060 5050'}
+                cvc={'159'}
             />
             
         </View>
