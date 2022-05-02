@@ -9218,7 +9218,7 @@ prompts@^2.0.1, prompts@^2.3.1, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@*, prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@*, prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9423,6 +9423,13 @@ react-native-animated-nav-tab-bar@^3.1.8:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/react-native-animated-nav-tab-bar/-/react-native-animated-nav-tab-bar-3.1.8.tgz#8c23f99b662681718ffb3c983899d010bf7f52f5"
   integrity sha512-7JtXipq1HPZqFGtjrUkez206XzJy1J1vWDm2aWfii8sDv3egA/zWC6jaKjNLbvtjNh2qJ56h2VDODL8HMbJkjA==
+
+react-native-awesome-card-io@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/react-native-awesome-card-io/-/react-native-awesome-card-io-0.9.1.tgz#419e11ac1cbcc1333d7c2bf1c1a5cea46c8ee57b"
+  integrity sha512-KZrlIrZbR92WlUBwrWlXpIxHqGVZ/iTdyXmAYkZMRg00zS2Mf+Ey+5yq20ShlFE847PTaH4JbGKMX7oYO26HhQ==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-native-biometrics@^2.1.4:
   version "2.1.4"
