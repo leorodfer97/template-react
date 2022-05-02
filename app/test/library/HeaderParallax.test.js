@@ -1,13 +1,13 @@
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, View} from 'react-native';
 
 import StickyParallaxHeader from 'react-native-sticky-parallax-header';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import { BoxStyles } from '../styles/Box.styles';
 import { SectionStyles } from '../styles/Section.styles';
 
-const TestHeaderParallax = () => {
+
+const TestHeaderParallax = ({navigation}) => {
 
     return(
         <StickyParallaxHeader 
@@ -18,8 +18,16 @@ const TestHeaderParallax = () => {
             image={require('./../../images/avatar.jpg')}
             hasBorderRadius={false}
             leftTopIcon={require('./../../images/bars-solid.png')}
+            leftTopIconOnPress={() => {
+                navigation.toggleDrawer()
+            }}
             rightTopIcon={require('./../../images/search-solid.png')}
             parallaxHeight={200}
+            contentContainerStyles={{
+                paddingVertical: 50
+            }}
+            snapValue={true}
+            snapToEdge={true}
         >
             <View style={SectionStyles.section}>
                 <View style={BoxStyles.box}>
