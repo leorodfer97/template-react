@@ -19,26 +19,27 @@ const TestPinar = () => {
                 <Carousel 
                     style={CarouselStyles.carousel}
                     showsControls={false}
+                    loop={true}
                 >
-                    <View style={[CarouselStyles.viewCarousel, {backgroundColor: 'black'}]}>
+                    <View style={CarouselStyles.viewCarousel}>
                         <View style={CarouselStyles.containerCarousel}>
                             <Image style={CarouselStyles.imageCarousel} source={require('./../../images/product00.png')}/>
                         </View>
                         <Text style={CarouselStyles.titleCarousel}>Auriculares negros</Text>
                     </View>
-                    <View style={[CarouselStyles.viewCarousel, {backgroundColor: 'purple'}]}>
+                    <View style={CarouselStyles.viewCarousel}>
                         <View style={CarouselStyles.containerCarousel}>
                             <Image style={CarouselStyles.imageCarousel} source={require('./../../images/product01.png')}/>
                         </View>
                         <Text style={CarouselStyles.titleCarousel}>Auriculares purpura</Text>
                     </View>
-                    <View style={[CarouselStyles.viewCarousel, {backgroundColor: 'green'}]}>
+                    <View style={CarouselStyles.viewCarousel}>
                         <View style={CarouselStyles.containerCarousel}>
                             <Image style={CarouselStyles.imageCarousel} source={require('./../../images/product02.png')}/>
                         </View>
                         <Text style={CarouselStyles.titleCarousel}>Auriculares verdes</Text>
                     </View>
-                    <View style={[CarouselStyles.viewCarousel, {backgroundColor: 'red'}]}>
+                    <View style={CarouselStyles.viewCarousel}>
                         <View style={CarouselStyles.containerCarousel}>
                             <Image style={CarouselStyles.imageCarousel} source={require('./../../images/product03.png')}/>
                         </View>

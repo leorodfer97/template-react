@@ -29,7 +29,6 @@ export const CarouselStyles = StyleSheet.create({
     titleCarousel: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: 'white',
     },
     imageCarousel: {
         flex: 1,
