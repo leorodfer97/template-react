@@ -20,7 +20,7 @@ const TestCardInput = () => {
             <View style={BoxStyles.box}>
                 <Text style={BoxStyles.textBox}>react-native-credit-card-input</Text>
                 <Text style={BoxStyles.textBox}>{`Requiere -> deprecated-react-native-prop-types`}</Text>
-                <Text style={BoxStyles.textBox}>Tambien tira warnings pero se deberian ignorar</Text>
+                <Text style={BoxStyles.textBox}>{`Formulario pendiente`}</Text>
             </View>
 
             <CardView

@@ -1,5 +1,5 @@
-import React from 'react';
-import {Platform, Text, TouchableOpacity, View} from 'react-native';
+import React, {useState} from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 
 import { CardIOModule } from 'react-native-awesome-card-io';
 
@@ -8,6 +8,8 @@ import { ButtonStyles } from '../styles/Button.styles';
 import { SectionStyles } from '../styles/Section.styles';
 
 const TestCardIO = () => {
+
+    const [dataCard, setDataCard] = useState('')
 
     const playLibrary = () => {
         CardIOModule.scanCard( config = {
@@ -18,7 +20,7 @@ const TestCardIO = () => {
             scanExpiry: true,
         })
         .then((card) => {
-            console.log(card);
+            setDataCard(JSON.stringify(card));
         })
         .catch((e) => {
           console.log(e);
@@ -29,6 +31,9 @@ const TestCardIO = () => {
         <View style={SectionStyles.section}>
             <View style={BoxStyles.box}>
                 <Text style={BoxStyles.textBox}>react-native-awesome-card-io</Text>
+            </View>
+            <View style={BoxStyles.box}>
+                <Text style={BoxStyles.textBox}>data: {dataCard}</Text>
             </View>
             <TouchableOpacity style={ButtonStyles.buttonAction} onPress={() => { playLibrary(); }}>
                 <Text style={ButtonStyles.textButton}>Ejecutar</Text>
