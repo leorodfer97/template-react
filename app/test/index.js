@@ -52,6 +52,14 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('local-auth');}}>
                     <Text style={ButtonStyles.textButton}>Local Auth</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('magnus');}}>
+                    <Text style={ButtonStyles.textButton}>Magnus UI</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('flip-card');}}>
+                    <Text style={ButtonStyles.textButton}>Flip Card</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>
