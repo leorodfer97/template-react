@@ -31,6 +31,7 @@
     "react-native-gesture-flip-card": "^1.0.6",
     "react-native-gesture-handler": "^2.4.1",
     "react-native-image-modal": "^2.0.4",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-magnus": "^1.0.62",
     "react-native-mmkv": "^2.3.3",
     "react-native-modal": "^13.0.1",
