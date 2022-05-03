@@ -48,6 +48,10 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('card-io');}}>
                     <Text style={ButtonStyles.textButton}>Card IO</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('local-auth');}}>
+                    <Text style={ButtonStyles.textButton}>Local Auth</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>

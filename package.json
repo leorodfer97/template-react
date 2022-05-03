@@ -34,6 +34,7 @@
     "react-native-sticky-parallax-header": "^0.4.2",
     "react-native-switch-selector": "^2.2.1",
     "react-native-vector-icons": "^9.1.0",
+    "rn-local-authentication": "^1.2.5",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.5"
   },

@@ -13,6 +13,7 @@ import TestSwitchSelector from '../test/library/SwitchSelector.test';
 import TestHeaderParallax from '../test/library/HeaderParallax.test';
 import TestPinar from '../test/library/Pinar.test';
 import TestCardIO from '../test/library/CardIO.test';
+import TestLocalAuth from '../test/library/localAuth.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -125,6 +126,17 @@ const TestStackRoutes = () => {
                 component={TestCardIO}
                 options={{
                     title: 'Card IO',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="local-auth"
+                component={TestLocalAuth}
+                options={{
+                    title: 'Local Auth',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',
