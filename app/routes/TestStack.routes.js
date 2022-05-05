@@ -18,6 +18,7 @@ import TestMagnus from '../test/library/Magnus.test';
 import TestFlipCard from '../test/library/FlipCard.test';
 import TestKeyboardScroll from '../test/library/KeyboardScroll.test';
 import TestConfig from '../test/library/Config.test';
+import TestFlashMessage from '../test/library/FlashMessage.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -185,6 +186,17 @@ const TestStackRoutes = () => {
                 component={TestConfig}
                 options={{
                     title: 'Config',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="flash-message"
+                component={TestFlashMessage}
+                options={{
+                    title: 'Flash Message',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',
