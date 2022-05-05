@@ -64,6 +64,10 @@ const IndexTest = () => {
                 <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('keyboard-scroll');}}>
                     <Text style={ButtonStyles.textButton}>Keyboard Scroll</Text>
                 </TouchableOpacity>
+                
+                <TouchableOpacity style={ButtonStyles.button} onPress={() => {navigation.navigate('config');}}>
+                    <Text style={ButtonStyles.textButton}>Config</Text>
+                </TouchableOpacity>
 
             </ScrollView>
         </>

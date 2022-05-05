@@ -24,6 +24,7 @@
     "react-native-animated-nav-tab-bar": "^3.1.8",
     "react-native-awesome-card-io": "^0.9.1",
     "react-native-biometrics": "^2.1.4",
+    "react-native-config": "^1.4.5",
     "react-native-credit-card-input": "^0.4.1",
     "react-native-elements": "^3.4.2",
     "react-native-fast-image": "^8.5.11",

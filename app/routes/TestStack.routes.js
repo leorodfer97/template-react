@@ -17,6 +17,7 @@ import TestLocalAuth from '../test/library/localAuth.test';
 import TestMagnus from '../test/library/Magnus.test';
 import TestFlipCard from '../test/library/FlipCard.test';
 import TestKeyboardScroll from '../test/library/KeyboardScroll.test';
+import TestConfig from '../test/library/Config.test';
 
 const Stack = createNativeStackNavigator();
 
@@ -173,6 +174,17 @@ const TestStackRoutes = () => {
                 component={TestKeyboardScroll}
                 options={{
                     title: 'Keyboard Scroll',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: HeaderStyles.title,
+                    headerTintColor: 'white',
+                    headerStyle: HeaderStyles.header,
+                }}
+            />
+            <Stack.Screen
+                name="config"
+                component={TestConfig}
+                options={{
+                    title: 'Config',
                     headerTitleAlign: 'center',
                     headerTitleStyle: HeaderStyles.title,
                     headerTintColor: 'white',
