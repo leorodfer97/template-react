@@ -9,10 +9,12 @@ import { SectionStyles } from '../styles/Section.styles';
 
 const TestFlashMessage = () => {
 
+    const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta elit purus, ut tempor ante rutrum eu. Vestibulum finibus tortor iaculis, scelerisque augue eget, pulvinar eros.";
+
     const playSuccess = () => {
         showMessage({
             message: "Felicidades",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta elit purus, ut tempor ante rutrum eu. Vestibulum finibus tortor iaculis, scelerisque augue eget, pulvinar eros.",
+            description: description,
             type: "success",
             icon: "success",
         });
@@ -21,7 +23,7 @@ const TestFlashMessage = () => {
     const playInfo = () => {
         showMessage({
             message: "Consejo",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta elit purus, ut tempor ante rutrum eu. Vestibulum finibus tortor iaculis, scelerisque augue eget, pulvinar eros.",
+            description: description,
             type: "default",
             icon: "info",
         });
@@ -30,7 +32,7 @@ const TestFlashMessage = () => {
     const playWarning = () => {
         showMessage({
             message: "Advertencia",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta elit purus, ut tempor ante rutrum eu. Vestibulum finibus tortor iaculis, scelerisque augue eget, pulvinar eros.",
+            description: description,
             type: "warning",
             icon: "warning",
         });
@@ -39,7 +41,7 @@ const TestFlashMessage = () => {
     const playDanger = () => {
         showMessage({
             message: "Error",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta elit purus, ut tempor ante rutrum eu. Vestibulum finibus tortor iaculis, scelerisque augue eget, pulvinar eros.",
+            description: description,
             type: "danger",
             icon: "danger",
         });
